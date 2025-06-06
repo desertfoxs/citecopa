@@ -60,7 +60,14 @@ export const Footer = () => {
             </Typography>
             <hr style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px', margin: '10px 0' }} />
             <Typography variant="body1" sx={{ fontFamily: "var(--font-spartan)", fontSize: "1.2em" }}><i className="fas fa-home mr-3"></i> Dirección: Italia 401 ¨b¨.</Typography>
-            <Typography variant="body1" sx={{ fontFamily: "var(--font-spartan)", fontSize: "1.2em" }}><i className="fas fa-envelope mr-3"></i> info@example.com</Typography>
+            <Typography
+              variant="body1"
+              component="a"
+              href="mailto:fundacioncitecopa@gmail.com"
+              sx={{ fontFamily: "var(--font-spartan)", fontSize: "1.2em", textDecoration: "none", color: "inherit" }}
+            >
+              <i className="fas fa-envelope mr-3"></i> fundacioncitecopa@gmail.com
+            </Typography>
             <ReactWhatsapp
               number="549-2920-35-4587"
               message="Hola! Quisiera más información sobre Citecopa!"
@@ -76,7 +83,7 @@ export const Footer = () => {
       <Box sx={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', py: 2 }}>
         <Container maxWidth="lg">
           <Typography variant="body2" align="center">
-            © 2024 Copyright:
+            © 2025 Copyright:
             <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}> Fundación Citecopa</Link>
           </Typography>
           <Typography variant="body2" align="center">
