@@ -6,7 +6,6 @@ import Dashboard from "../components/pages/dashboard/Dashboard";
 import ProtectedAdmin from "./ProtectedAdmin";
 import { Layout } from "../components/layout/Layout";
 import Login from "../components/pages/login/Login";
-import { Home } from "../components/pages/home/Home";
 import Register from "../components/pages/register/Register";
 import { Miembros } from "../components/pages/miembros/Miembros";
 import Contactos from "../components/pages/dashboard/Contactos";
@@ -16,7 +15,6 @@ import FormularioContactoList from "../components/pages/dashboard/FormularioCont
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
       {/* PARA LOS USUARIOS LOGEADOS */}
       {/* <Route element={<ProtectedUsers />}>
         <Route element={<Layout />}>
